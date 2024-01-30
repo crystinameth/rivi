@@ -1,6 +1,8 @@
 import Navbar from "@/components/ui/mycomp/navbar";
 import MyCaousel from "@/components/ui/mycomp/carousel";
 import Prop from "@/components/ui/mycomp/prop";
+import ParallaxSection from "@/components/ui/mycomp/parallel";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -21,6 +23,7 @@ export default function Home() {
       </div>
       <MyCaousel />
       <Prop />
+      <ParallaxSection />
       
     </main>
   );
