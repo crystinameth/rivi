@@ -2,6 +2,7 @@ import Navbar from "@/components/ui/mycomp/navbar";
 import MyCaousel from "@/components/ui/mycomp/carousel";
 import Prop from "@/components/ui/mycomp/prop";
 import ParallaxSection from "@/components/ui/mycomp/parallel";
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
 export default function Home() {
@@ -24,7 +25,16 @@ export default function Home() {
       <MyCaousel />
       <Prop />
       <ParallaxSection />
-      
+
+      <div className="flex flex-col items-center justify-between bg-blue-500 w-full h-min">
+        <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl text-white p-2">
+          Download Rivi
+        </h1>
+        <h3 className="text-xl font-semibold tracking-tight text-white p-2">
+          Plan your next trip with Rivi.
+        </h3>
+        <Button variant="outline">Get the app</Button>
+      </div>
     </main>
   );
 }
