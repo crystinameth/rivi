@@ -13,7 +13,7 @@ export default function Employee() {
             width={300}
             className="w-full object-cover mb-4 rounded-md"
           />
-          <h3 className="text-lg font-semibold mb-2">Employee Name</h3>
+          <h3 className="text-lg font-semibold mb-2">Zaddy</h3>
           <p className="text-gray-600">Position</p>
         </div>
       </div>
