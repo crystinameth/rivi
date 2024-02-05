@@ -1,4 +1,5 @@
 import Navbar from "@/components/ui/mycomp/navbar";
+import { NavigationMenuDemo } from "./navigation";
 
 export default function Company() {
     return (
@@ -16,6 +17,7 @@ export default function Company() {
                 <h1 className="scroll-m-20 font-bold tracking-wide text-5xl font-sans pl-40 pt-20">
                 Machine learning - at the core of everything <br/>we do.
                 </h1>
+                <NavigationMenuDemo />
             </div>
         </div>
     )
