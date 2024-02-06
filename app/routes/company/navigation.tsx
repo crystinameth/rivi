@@ -1,22 +1,9 @@
-"use client";
-
 import * as React from "react";
-import Link from "next/link";
 import Image from "next/image";
 
 import { cn } from "@/lib/utils";
 
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-  navigationMenuTriggerStyle,
-} from "@/components/ui/navigation-menu";
-
-const chat: {
+export const chat: {
   title: string;
   href: string;
   description: string;
@@ -54,7 +41,35 @@ const chat: {
   },
 ];
 
-const others: { title: string; href: string; description: string; icon: string; }[] = [
+export const recommend: { title: string; icon: string }[] = [
+  {
+    title: "Flights",
+    icon: "/icons/airIcon.svg",
+  },
+  {
+    title: "Hotels and Vacation Rentals",
+    icon: "/icons/hotel.svg",
+  },
+  {
+    title: "Things to do, food and nightlife",
+    icon: "/icons/AI.svg",
+  },
+  {
+    title: "Automatic Itinerary",
+    icon: "/icons/search.svg",
+  },
+  {
+    title: "Destination, dates and more",
+    icon: "/icons/quiz.svg",
+  },
+];
+
+export const others: {
+  title: string;
+  href: string;
+  description: string;
+  icon: string;
+}[] = [
   {
     title: "Flight price prediction",
     href: "#",
@@ -77,84 +92,37 @@ const others: { title: string; href: string; description: string; icon: string; 
     icon: "/icons/quiz.svg",
   },
 ];
-export function NavigationMenuDemo() {
-  return (
-    <NavigationMenu>
-      <NavigationMenuList>
-        <NavigationMenuItem>
-          <NavigationMenuTrigger>Rivi Chat</NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-              {chat.map((chat) => (
-                <ListItem 
-                  key={chat.title} 
-                  title={chat.title} 
-                  href={chat.href} 
-                  icon={chat.icon}
-                >
-                  {chat.description}
-                </ListItem>
-              ))}
-            </ul>
-          </NavigationMenuContent>
-        </NavigationMenuItem>
 
-        <NavigationMenuItem>
-          <NavigationMenuTrigger>Other Rivi AI</NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
-              {others.map((other) => (
-                <ListItem
-                  key={other.title}
-                  title={other.title}
-                  href={other.href}
-                  icon={other.icon}
-                >
-                  {other.description}
-                </ListItem>
-              ))}
-            </ul>
-          </NavigationMenuContent>
-        </NavigationMenuItem>
-
-        <NavigationMenuItem>
-          <Link href="/docs" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Documentation
-            </NavigationMenuLink>
-          </Link>
-        </NavigationMenuItem>
-      </NavigationMenuList>
-    </NavigationMenu>
-  );
-}
-
-const ListItem = React.forwardRef<
+export const ListItem = React.forwardRef<
   React.ElementRef<"a">,
   React.ComponentPropsWithoutRef<"a"> & { icon: string }
 >(({ className, title, children, icon, ...props }, ref) => {
   return (
     <li>
-      <NavigationMenuLink asChild>
-        <a
-          ref={ref}
-          className={cn(
-            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
-            className
-          )}
-          {...props}
-        >
+      <a
+        ref={ref}
+        className={cn(
+          "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
+          className
+        )}
+        {...props}
+      >
         <div className="flex items-center">
-          <Image src={icon} alt={title} width={32} height={32} className="mr-2" />
-            <div>
-              <div className="text-sm font-medium leading-none">{title}</div>
-              <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                {children}
-              </p>
-            </div>
+          <Image
+            src={icon}
+            alt={title}
+            width={40}
+            height={40}
+            className="mr-4"
+          />
+          <div>
+            <div className="text-xl font-bold leading-none">{title}</div>
+            <p className="line-clamp-2 text-md leading-snug text-muted-foreground">
+              {children}
+            </p>
           </div>
-        </a>
-      </NavigationMenuLink>
+        </div>
+      </a>
     </li>
   );
 });
