@@ -11,7 +11,9 @@ export default function Navbar() {
             <a href="#" className="font-sans hover:font-serif hover:text-white">BLOG</a>
             <a href="./routes/people" className="font-sans hover:font-serif hover:text-white">PEOPLE</a>
             <a href="./routes/company" className="font-sans hover:font-serif hover:text-white">COMPANY</a>
+            <a href="./routes/download">
             <Button variant="outline">Get the app</Button>
+            </a>
          </div>
         </div>
     </nav>

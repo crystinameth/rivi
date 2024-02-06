@@ -1,6 +1,5 @@
 import Navbar from "@/components/ui/mycomp/navbar";
 import { TabsRivi } from "./tabs";
-import Image from "next/image";
 import Info from "./info";
 
 export default function Company() {
