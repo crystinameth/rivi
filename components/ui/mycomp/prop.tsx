@@ -10,7 +10,7 @@ export default function Prop() {
       <div className="flex flex-row justify-around">
         <Image src="/flight.webp" alt="flight" width={300} height={400} />
         <h3 className="scroll-m-20 text-xl tracking-wide p-6 ">
-          <Image src="/airIcon.svg" alt="icon" width={200} height={200} p-6 />
+          <Image src="/icons/airIcon.svg" alt="icon" width={200} height={200} p-6 />
           <br />
           <br />
           You search for multiple <br />
@@ -34,7 +34,7 @@ export default function Prop() {
         </h1>
         <div className="flex flex-row justify-around">
           <h3 className="scroll-m-20 text-xl tracking-wide ">
-            <Image src="/hotel.svg" alt="icon" width={100} height={200} p-6 />
+            <Image src="/icons/hotel.svg" alt="icon" width={100} height={200} p-6 />
             <br />
             <br />
             You try out a combination of <br />
@@ -62,7 +62,7 @@ export default function Prop() {
       <div className="flex flex-row justify-around">
         <Image src="/paris.webp" alt="flight" width={300} height={400} />
         <h3 className="scroll-m-20 text-xl tracking-wide p-6 ">
-          <Image src="/activity.svg" alt="icon" width={200} height={200} p-6 />
+          <Image src="/icons/activity.svg" alt="icon" width={200} height={200} p-6 />
           <br />
           <br />
           Holiday packages are a thing <br/>

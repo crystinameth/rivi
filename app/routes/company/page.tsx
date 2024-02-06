@@ -1,5 +1,6 @@
 import Navbar from "@/components/ui/mycomp/navbar";
 import { NavigationMenuDemo } from "./navigation";
+import { TabsRivi } from "./tabs";
 
 export default function Company() {
     return (
@@ -18,6 +19,7 @@ export default function Company() {
                 Machine learning - at the core of everything <br/>we do.
                 </h1>
                 <NavigationMenuDemo />
+                <TabsRivi />
             </div>
         </div>
     )
