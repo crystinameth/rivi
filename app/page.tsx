@@ -1,9 +1,10 @@
 import Navbar from "@/components/ui/mycomp/navbar";
+import Footer from "@/components/ui/mycomp/footer";
 import MyCaousel from "@/components/ui/mycomp/carousel";
 import Prop from "@/components/ui/mycomp/prop";
 import ParallaxSection from "@/components/ui/mycomp/parallel";
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -33,7 +34,10 @@ export default function Home() {
         <h3 className="text-xl font-semibold tracking-tight text-white p-2">
           Plan your next trip with Rivi.
         </h3>
+        <Link href="/routes/download">
         <Button variant="outline">Get the app</Button>
+        </Link>
+        <Footer />
       </div>
     </main>
   );

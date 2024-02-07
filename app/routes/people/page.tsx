@@ -1,5 +1,6 @@
 import Navbar from "@/components/ui/mycomp/navbar";
 import Employee from "./people";
+import Footer from "@/components/ui/mycomp/footer";
 
 export default function People() {
   return (
@@ -16,6 +17,7 @@ export default function People() {
       </p>
 
       <Employee />
+      <Footer />
     </div>
   );
 }

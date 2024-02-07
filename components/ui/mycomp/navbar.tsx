@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
 
 export default function Navbar() {
     return (
@@ -9,11 +10,11 @@ export default function Navbar() {
             <div className="space-x-12">
             <a href="#" className="font-sans hover:font-serif hover:text-white">LABS</a>
             <a href="https://medium.com/rivi-blog" target="_blank" rel="noopener noreferrer" className="font-sans hover:font-serif hover:text-white">BLOG</a>
-            <a href="./routes/people" className="font-sans hover:font-serif hover:text-white">PEOPLE</a>
-            <a href="./routes/company" className="font-sans hover:font-serif hover:text-white">COMPANY</a>
-            <a href="./routes/download">
+            <Link href="/routes/people" className="font-sans hover:font-serif hover:text-white">PEOPLE</Link>
+            <Link href="/routes/company" className="font-sans hover:font-serif hover:text-white">COMPANY</Link>
+            <Link href="/routes/download">
             <Button variant="outline">Get the app</Button>
-            </a>
+            </Link>
          </div>
         </div>
     </nav>

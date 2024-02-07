@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Footer from "@/components/ui/mycomp/footer";
 import Navbar from "@/components/ui/mycomp/navbar";
 
 export default function Download() {
@@ -27,6 +28,7 @@ export default function Download() {
       <Button variant="outline" className="bg-blue-500 text-white p-4">
         JOIN THE WAITLIST
       </Button>
+      <Footer />
     </div>
   );
 }

@@ -1,6 +1,7 @@
-import Navbar from "@/components/ui/mycomp/navbar";
+import Navbar  from "@/components/ui/mycomp/navbar";
 import { TabsRivi } from "./tabs";
 import Info from "./info";
+import Footer from "@/components/ui/mycomp/footer";
 
 export default function Company() {
   return (
@@ -21,8 +22,8 @@ export default function Company() {
         </h1>
         <TabsRivi />
       </div>
-
       <Info/>
+      <Footer />
     </div>
   );
 }
