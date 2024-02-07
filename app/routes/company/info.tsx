@@ -17,7 +17,7 @@ export default function Info() {
           </h1>
           <br />
           3 Internal Web Apps, 20+ Machine Learning models
-          <br /> and 100s of other backend APIs power Rivi's mobile
+          <br /> and 100s of other backend APIs power Rivi&apos;s mobile
           <br /> application.
           <br />
           <br />
@@ -57,7 +57,7 @@ export default function Info() {
           <p className="p-4 text-justify ">
              There is no better way to shatter boundaries than
              with travel. But to make travel plans magical, the
-             burden of researching is not one that's easy to bear.
+             burden of researching is not one that&apos;s easy to bear.
           </p>
           <p className="p-4 text-justify ">
              We dive deep into the ocean of data to make every 
@@ -91,8 +91,8 @@ export default function Info() {
           </h1>
           <br />
           People make or break any company. We are no
-          <br /> different. We put in equal parts "love" and "logic" to
-          <br /> make "Rivi" come to life.
+          <br /> different. We put in equal parts &lbrace;love&rbrace; and &lbrace;logics&rbrace; to
+          <br /> make &lbrace;Rivi&rbrace; come to life.
           <br />
           <br />
           Here’s the essence of what’s woven into the culture<br/> at Rivi.
@@ -109,11 +109,11 @@ export default function Info() {
       <div className="flex flex-row justify-between">
         <h3 className="scroll-m-20 text-xl tracking-wide p-6 pl-10 pr-10 font-mono ">
           <h1 className="text-3xl font-sans font-extrabold tracking-wide pl-10">
-          We :heart: travel that's modern <br/>and sustainable
+          We :heart: travel that&apos;s modern <br/>and sustainable
           </h1>
           <br />
           <blockquote className="mt-6 border-l-2 pl-6 pb-4 italic">
-            "In a world where you can be anything, be kind."
+            &quot;In a world where you can be anything, be kind.&quot;
           </blockquote>
           <p className="p-4 text-justify">
           To us, travelling sustainably is not a niche or a trend,

@@ -110,7 +110,7 @@ export const ListItem = React.forwardRef<
         <div className="flex items-center">
           <Image
             src={icon}
-            alt={title}
+            alt="icon"
             width={40}
             height={40}
             className="mr-4"

@@ -28,7 +28,7 @@ export function TabsRivi() {
               Chat with RIVI
             </CardTitle>
             <CardDescription className="scroll-m-20 text-2xl pt-5 pl-10 font-bold tracking-tight font-serif">
-              NLU and conversational AI models that<br/> power Rivi's chat
+              NLU and conversational AI models that<br/> power Rivi&apos;s chat
             </CardDescription>
           </CardHeader>
           <CardContent>
