@@ -8,7 +8,7 @@ export default function Navbar() {
             <a href="#" className="text-lg font-semibold">RIVI</a>
 
             <div className="space-x-12">
-            <a href="#" className="font-sans hover:font-serif hover:text-white">LABS</a>
+            <Link href="/routes/labs" className="font-sans hover:font-serif hover:text-white">LABS</Link>
             <a href="https://medium.com/rivi-blog" target="_blank" rel="noopener noreferrer" className="font-sans hover:font-serif hover:text-white">BLOG</a>
             <Link href="/routes/people" className="font-sans hover:font-serif hover:text-white">PEOPLE</Link>
             <Link href="/routes/company" className="font-sans hover:font-serif hover:text-white">COMPANY</Link>
