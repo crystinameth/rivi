@@ -15,7 +15,7 @@ export default function Navbar() {
             <Link href="/routes/download">
             <Button variant="outline">Get the app</Button>
             </Link>
-         </div>
+            </div>
         </div>
     </nav>
     )
