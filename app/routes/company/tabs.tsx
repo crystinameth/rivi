@@ -32,12 +32,11 @@ export function TabsRivi() {
             </CardDescription>
           </CardHeader>
           <CardContent>
-            <ul className="grid w-[600px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[1000px] ">
+            <ul className="grid w-[600px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[1000px]">
               {chat.map((chat) => (
                 <ListItem
                   key={chat.title}
                   title={chat.title}
-                  href={chat.href}
                   icon={chat.icon}
                 >
                   {chat.description}
@@ -56,13 +55,14 @@ export function TabsRivi() {
             </CardDescription>
           </CardHeader>
           <CardContent>
-            <ul className="grid w-[600px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[1000px] ">
+            <ul className="grid w-[600px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[1000px]">
               {recommend.map((recommend) => (
                 <ListItem
                   key={recommend.title}
                   title={recommend.title}
                   icon={recommend.icon}
-                ></ListItem>
+                >
+                </ListItem>
               ))}
             </ul>
           </CardContent>
@@ -82,7 +82,6 @@ export function TabsRivi() {
                 <ListItem
                   key={other.title}
                   title={other.title}
-                  href={other.href}
                   icon={other.icon}
                 >
                   {other.description}

@@ -15,7 +15,7 @@ export default function Company() {
         travel product in the world.
       </h1>
 
-      <div className="bg-slate-200 w-full min-h-screen">
+      <div className="bg-slate-200 w-full min-h-screen pb-20">
         <h1 className="scroll-m-20 font-bold tracking-wide text-5xl font-sans pl-40 pt-20">
           Machine learning - at the core of everything <br />
           we do.
