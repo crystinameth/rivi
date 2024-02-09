@@ -15,6 +15,7 @@ export default function Download() {
         Rivi and have
         <br /> temporarily paused access for any new users.
       </p>
+      <div className="pb-10 flex flex-col items-center">
       <p className="pt-3 pb-3 text-lg font-sans tracking-wide">
         Perfectly personalised trips with Rivi coming up soon.
       </p>
@@ -23,11 +24,12 @@ export default function Download() {
         id="email"
         name="email"
         placeholder="Enter your email"
-        className="w-1/3 px-3 py-2 mt-1 mb-4 border-solid-4 bg-slate-200 rounded-md focus:outline-none focus:border-blue-500"
+        className="w-1/2 px-3 py-2 mt-1 mb-4 border-solid-4 bg-slate-200 rounded-md focus:outline-none focus:border-blue-500"
       />
       <Button variant="outline" className="bg-blue-500 text-white p-4">
         JOIN THE WAITLIST
       </Button>
+      </div>
       <Footer />
     </div>
   );

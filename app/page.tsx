@@ -28,13 +28,13 @@ export default function Home() {
       <ParallaxSection />
 
       <div className="flex flex-col items-center justify-between bg-blue-500 w-full h-min">
-        <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl text-white p-2">
+        <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl text-white p-2 pt-10">
           Download Rivi
         </h1>
         <h3 className="text-xl font-semibold tracking-tight text-white p-2">
           Plan your next trip with Rivi.
         </h3>
-        <Link href="/routes/download">
+        <Link href="/routes/download" className="pb-10">
         <Button variant="outline">Get the app</Button>
         </Link>
         <Footer />
