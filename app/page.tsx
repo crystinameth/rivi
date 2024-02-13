@@ -9,7 +9,7 @@ import ScrollDemo from "@/components/ui/mycomp/scroll";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between">
+    <main className="flex min-h-screen flex-col items-center ">
       <Navbar />
       <div className="flex min-h-screen flex-col items-center justify-between p-24 bg-blue-500 w-full">
         <h1 className="text-4xl font-extrabold tracking-tight lg:text-5xl text-white">

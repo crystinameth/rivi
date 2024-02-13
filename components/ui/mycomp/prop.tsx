@@ -34,7 +34,7 @@ export default function Prop() {
         </h3>
       </div>
 
-      <div className="bg-slate-200 pb-20">
+      <div className="bg-slate-200 pb-20 mt-10">
         <h1 className="text-4xl font-extrabold tracking-wide lg:text-5xl text-black p-20 text-center ">
           28 million hotels. Rivi <br />
           will find you the one.
