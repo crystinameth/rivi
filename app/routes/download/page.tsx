@@ -1,11 +1,8 @@
 import { Button } from "@/components/ui/button";
-import Footer from "@/components/ui/mycomp/footer";
-import Navbar from "@/components/ui/mycomp/navbar";
 
 export default function Download() {
   return (
     <div className="flex flex-col items-center ">
-      <Navbar />
       <span className="text-3xl pt-40 pb-5">🙏</span>
       <h1 className="scroll-m-20 text-2xl font-extrabold tracking-wide pb-2">
         We thank our 25,000+ users for planning their trips with Rivi.
@@ -30,7 +27,6 @@ export default function Download() {
         JOIN THE WAITLIST
       </Button>
       </div>
-      <Footer />
     </div>
   );
 }

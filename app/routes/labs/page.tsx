@@ -1,13 +1,10 @@
-import Navbar from "@/components/ui/mycomp/navbar"
 import Services from "./cards"
 import { Button } from "@/components/ui/button"
-import Footer from "@/components/ui/mycomp/footer"
 import Link from "next/link"
 
 export default function Labs(){
     return(
         <div className="flex flex-col items-left justify-between min-h">
-            <Navbar />
             <p className="text-2xl text-gray-400 pt-60 pl-40 font-mono">
                 Rivi Labs
             </p>
@@ -49,7 +46,6 @@ export default function Labs(){
                     <Link href="business@rivi.co" className="text-blue-500">Fix up a slot</Link>
                 </div>
             </div>
-            <Footer/>
         </div>
     )
 }

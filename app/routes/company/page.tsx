@@ -1,12 +1,9 @@
-import Navbar  from "@/components/ui/mycomp/navbar";
 import { TabsRivi } from "./tabs";
 import Info from "./info";
-import Footer from "@/components/ui/mycomp/footer";
 
 export default function Company() {
   return (
     <div className="flex flex-col items-left justify-between min-h">
-      <Navbar />
       <p className="text-2xl text-gray-400 pt-60 pl-40 font-mono">
         OUR MISSION
       </p>
@@ -23,7 +20,6 @@ export default function Company() {
         <TabsRivi />
       </div>
       <Info/>
-      <Footer />
     </div>
   );
 }

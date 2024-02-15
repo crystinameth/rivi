@@ -1,16 +1,12 @@
-import Navbar from "@/components/ui/mycomp/navbar";
-import Footer from "@/components/ui/mycomp/footer";
 import MyCaousel from "@/components/ui/mycomp/carousel";
 import Prop from "@/components/ui/mycomp/prop";
 import ParallaxSection from "@/components/ui/mycomp/parallel";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import ScrollDemo from "@/components/ui/mycomp/scroll";
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center ">
-      <Navbar />
       <div className="flex min-h-screen flex-col items-center justify-between p-24 bg-blue-500 w-full">
         <h1 className="text-4xl font-extrabold tracking-tight lg:text-5xl text-white">
           Meet Rivi - A friend
@@ -38,7 +34,6 @@ export default function Home() {
         <Link href="/routes/download" className="pb-10">
         <Button variant="outline">Get the app</Button>
         </Link>
-        <Footer />
       </div>
     </main>
   );
